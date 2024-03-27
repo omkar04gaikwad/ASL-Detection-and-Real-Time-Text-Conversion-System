@@ -9,7 +9,7 @@ def save_image(class_label, count, roi, directory):
     cv2.imwrite(os.path.join(directory, class_label, f"{count}.jpg"), roi)
 
 def main():
-    directory = 'Dataset/testingData/'
+    directory = 'ASL_python/Dataset/testingData/'
     minValue = 70
     if not os.path.exists(directory):
         os.makedirs(directory)
