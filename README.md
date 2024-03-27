@@ -13,3 +13,13 @@ The alternative approach involves exploring ASL detection through Pose Estimatio
 ## Data: 
 
 The project will require a dataset of American Sign Language (ASL) gestures captured in various environmental conditions both to train and test the enhanced model. To this end, we will generate a custom dataset using the OpenCV library, capturing approximately 800 images per symbol for training and 200 per symbol for testing. This dataset will include gestures presented against a blue-bounded square region of interest (ROI) to standardize the background, facilitating more accurate gesture recognition.  
+
+
+## Run C++
+1. Open Ubuntu
+2. go to the address:
+    cd /mnt/c/Users/omkar/OneDrive/Desktop/EECE5639/ASL_project/ASL-Detection-and-Real-Time-Text-Conversion-System/ASL_C++
+3. run the program
+    g++ -std=c++17 trainingdata.cpp
+    ./a.out
+    g++ -o output_file.out trainingdata.cpp -std=c++17 `pkg-config --cflags --libs opencv4`
